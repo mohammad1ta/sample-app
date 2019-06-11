@@ -1,0 +1,47 @@
+*,*:before,*:after { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box }
+*:focus { outline: 0 }
+html,body,div,span,h1,h2,h3,h4,h5,h6,ul,li,form,label { border: 0; font-size: 100%; font: inherit; margin: 0; padding: 0; line-height: 24px; }
+html { height: 100%; }
+body { background: #3f4e62 url('../images/login.png') center center no-repeat; background-size: cover; direction: ltr; line-height: 24px; font-family: 'customfont', tahoma; font-weight: 300; }
+a { color: #303f9f; text-decoration: none; transition: .3s; }
+input::-webkit-input-placeholder { /* Chrome/Opera/Safari */ color: #999; }
+input:-webkit-autofill { -webkit-box-shadow: 0 0 0px 1000px white inset; }
+ul, li { margin: 0; padding: 0; list-style-type: none; }
+h1, h2, h3, h4, h5, h6 { font-weight: normal; font-size: 18px; display: inline-block; margin: 0; padding: 0; }
+
+.right { float: right; }
+.left { float: left; }
+.clear { clear: both; }
+
+.container { padding: 150px 0 0 0; }
+
+.panel { width: 840px; margin: 0 auto; color: #fff; overflow: hidden; box-shadow: 0 0 40px rgba(0,0,0,.1); }
+
+.panel-form { float: right; width: 45%; height: 400px; padding: 0 20px; background: #fff; color: #333; }
+.panel-content { float: right; width: 55%; height: 400px; background: #ffbe22; color: #fff; padding: 20px; font-size: 14px; text-align: justify; }
+
+.panel-form a { color: #c56c38; font-size: 13px; }
+.panel-form a:hover { color: #ff9a03 }
+.panel-form form { padding: 26px 10px; display: block; }
+.panel-form h1 { font-size: 25px; color: #666; margin: 30px 0 50px; text-align: center; display: block; }
+.panel-form.register h1 { margin: 0 0 10px; }
+.panel-form input[type=text], .panel input[type=password] { width: 100%; height: 40px; color: #3a3a3a; padding: 6px 10px; border: none; border-bottom: 1px solid #ccc; font-family: verdana; font-size: 14px; direction: ltr; margin-bottom: 14px; }
+.panel-form input[type=submit] { width: 100%; margin: 8px 0 12px; background: #ffbe22; color: #fff; border: 0; padding: 4px 18px 10px; font-family: 'customfont', tahoma; font-size: 15px; cursor: pointer; box-shadow: 5px 6px 0 0px rgb(245, 243, 238); text-shadow: 1px 1px 0 rgba(0,0,0,.1); transition: .3s; }
+.panel-form input[type=submit]:hover { background-color: #ff9a03; }
+.error-msg {  background: #e74c3c; color: #fff; font-size: 14px; padding: 6px 10px 10px; display: block; margin-bottom: 10px; border-radius: 3px; }
+
+.panel-content h1 { display: block; margin: 20px auto 10px auto; color: #fff; letter-spacing: 2px; font-size: 34px; text-align: center; }
+.panel-content h1 span { color: #ff5200; }
+.panel-content h2 { display: block; text-align: center; margin-bottom: 50px; }
+.panel-content h2 span { font-size: 15px; display: inline-block; padding: 0 10px; border-top: 1px solid #d49c15; color: #d49c15; }
+.panel-content img { max-width: 200px; margin: 0 auto; display: block; animation: rocket .7s ease-in-out infinite; }
+.panel-content:hover img { animation-duration: .3s; }
+
+.socials { text-align: center; margin-bottom: 16px; }
+.social-login { background: #e93020; color: #fff; font-size: 15px; width: 160px; display: inline-block; margin: 0 8px; text-align: center; padding: 5px 0 8px; cursor: pointer; }
+.yahoo { background: #410093; }
+
+@keyframes rocket {
+  0%   { transform: translateY(0); }
+  50% { transform: translateY(-16px) rotate(-6deg); }
+}
